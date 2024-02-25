@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+struct stack{
+	int data;
+	stack * next;
+};
+
+bool isEmpty(stack * top){
+	if(!top) return true;
+	else return false;
+}
+
+void display(stack * top){
+	if (!top){
+		cout << endl <<  "Stack is Empty !";
+		return;
+	}else {
+		stack * temp = new stack;
+		cout<< endl << "Stack: ";
+		while (temp){
+			cout << temp -> data << " ";
+			temp = temp -> next;
+		}
+	}
+}
+
+void push(stack * top,int data){
+	stack * newNode = new stack;
+	newNode -> data = data;
+	newNode -> next = NULL;
+	if ( !top){
+		top = newNode;
+	}else{
+		stack * temp = top;
+		newNode -> next = top;
+		top = newNode;
+
+	}
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

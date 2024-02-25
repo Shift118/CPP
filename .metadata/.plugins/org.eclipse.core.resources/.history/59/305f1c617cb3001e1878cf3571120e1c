@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+struct Node{
+	int data;
+	Node * next;
+};
+
+bool isEmpty(Node * front,Node* rear){
+	if (!rear && !front) return true;
+	else return false;
+}
+
+void enqueue(Node *& front, Node *& rear,int val){
+	Node * newNode = new Node;
+	newNode -> data = val;
+	newNode -> next = NULL;
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

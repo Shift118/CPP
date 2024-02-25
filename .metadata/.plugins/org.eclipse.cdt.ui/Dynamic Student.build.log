@@ -1,0 +1,11 @@
+23:22:04 **** Rebuild of configuration Debug for project Dynamic Student ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Dynamic Student.o" "..\\src\\Dynamic Student.cpp" 
+..\src\Dynamic Student.cpp: In function 'int main()':
+..\src\Dynamic Student.cpp:12:12: warning: unused variable 'student' [-Wunused-variable]
+  Student * student = new Student [50];
+            ^~~~~~~
+g++ -o "Dynamic Student.exe" "src\\Dynamic Student.o" 
+
+23:22:06 Build Finished. 0 errors, 1 warnings. (took 1s.782ms)
+

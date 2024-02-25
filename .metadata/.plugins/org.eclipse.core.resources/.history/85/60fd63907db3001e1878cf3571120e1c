@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+struct Node{
+	int data;
+	Node * next;
+};
+
+bool isEmpty(Node * front,Node* rear){
+	if (!rear && !front) return true;
+	else return false;
+}
+
+void enqueue(Node *& front, Node *& rear,int val){
+	Node * newNode = new Node;
+	newNode -> data = val;
+	newNode -> next = NULL;
+	if(isEmpty(front,rear)){
+		front = rear = newNode;
+	}else{
+		rear -> next = newNode; //Add to the rear and delete from the Front
+		rear = newNode;
+	}
+}
+
+void dequeue(Node *& front , Node *& rear){
+	if(isEmpty(front, rear)){
+		cout << endl << "List is Empty!";
+		return;
+	}else if (front -> next == NULL){
+		cout << endl <<
+	}
+}
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

@@ -1,0 +1,86 @@
+#include <iostream>
+using namespace std;
+
+struct BstNode{
+	int key;
+	BstNode *left,*right;
+};
+
+void Insert(BstNode *& root , int key){
+	if(!root){
+		BstNode  * temp = new BstNode;
+		temp -> key = key;
+		temp -> left = temp -> right = NULL;
+		root = temp;
+	}else if (key < root -> key){
+		Insert(root->left,key);
+	}else if (key > root -> key){
+		Insert(root->right,key);
+	}
+}
+
+void preOrderdisplay(BstNode * root){ // Root -> Left -> Right
+	if (!root) return;
+	cout << root -> key << " ";
+	preOrderdisplay(root -> left);
+	preOrderdisplay(root -> right);
+}
+void inOrderdisplay(BstNode * root){ // Left -> Root -> Right
+	if (!root) return;
+	preOrderdisplay(root -> left); // We are using the Preorder Function
+	cout << root -> key << " ";
+	preOrderdisplay(root -> right);
+}
+void postOrderdisplay(BstNode * root){ // Left -> Right -> Root
+	if (!root) return;
+	preOrderdisplay(root -> left);
+	preOrderdisplay(root -> right);
+	cout << root -> key << " ";
+}
+
+int treeHeight(BstNode * root){
+	if(!root) return 0;
+	else{
+		int leftHeight =  treeHeight(root->left);
+//		cout <<endl<<"Left Heigh: "<< leftHeight<<endl;
+		int rightHeight =  treeHeight(root->right);
+//		cout <<endl<<"right Heigh: "<< rightHeight<<endl;
+		if(leftHeight >= rightHeight) return (leftHeight+1);
+		else return (rightHeight +1);
+	}
+}
+
+void printLevel (BstNode * root, int i){ //  level 0 then 1 then 2
+	if (!root) return;
+	else if(i == 0) cout << root -> key << " ";
+	else if (i > 0){
+		printLevel(root -> left,i-1);
+		printLevel(root -> right,i -1);
+	}
+}
+
+void breadthFirst(BstNode * root){
+	int h = treeHeight(root);
+	for(int i = 0; i < h;i++)
+		printLevel(root, i);
+}
+
+BstNode * search (BstNode * root, int key){
+	if(!root || root -> key == key)return root;
+	else if (root->key < key) return search(root->right, key);
+	else return search(root->left, key);
+}
+
+int main(void) {
+	BstNode* root = NULL ,*searched_test;
+	Insert(root,0);
+	for (int i = -10; i < 19; i++){
+		if(i != 0) Insert(root,i);
+	}
+	inOrderdisplay(root);
+	cout << endl << "Height: "<< treeHeight(root)<<endl;
+	breadthFirst(root);
+
+	searched_test = search(root,15);
+	cout <<endl<<"Search: "<< searched_test << " = "<<searched_test->key;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+struct Node{
+	int data;
+	Node * next;
+};
+
+bool isEmpty(Node * front,Node* rear){
+	if (!rear && !front){
+
+	}
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

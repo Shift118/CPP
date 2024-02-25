@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;DynamicStack_LinkedList&apos; to &apos;StaticStack_LinkedList&apos;" description="Rename resource &apos;DynamicStack_LinkedList&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/DynamicStack_LinkedList" name="StaticStack_LinkedList" stamp="1702215564799" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;StaticStack_LinkedList&apos; to &apos;StaticStack&apos;" description="Rename resource &apos;StaticStack_LinkedList&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/StaticStack_LinkedList" name="StaticStack" stamp="1702215574007" updateReferences="true"/>
+</session>

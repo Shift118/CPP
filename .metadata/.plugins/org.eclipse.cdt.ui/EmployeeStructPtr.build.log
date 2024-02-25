@@ -1,0 +1,7 @@
+23:22:08 **** Rebuild of configuration Debug for project EmployeeStructPtr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\EmployeeStructPtr.o" "..\\src\\EmployeeStructPtr.cpp" 
+g++ -o EmployeeStructPtr.exe "src\\EmployeeStructPtr.o" 
+
+23:22:09 Build Finished. 0 errors, 0 warnings. (took 1s.198ms)
+

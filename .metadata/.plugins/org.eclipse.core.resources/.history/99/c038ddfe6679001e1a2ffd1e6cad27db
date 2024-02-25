@@ -1,0 +1,58 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#define pi 3.14159265358979323846
+
+using namespace std;
+
+int main() {
+//    int a, b;
+//    double x = 99.8;
+//    float y = 99.8f;
+//    long u = 9090000L;
+//    char c = 'C';
+//    bool i = true;
+//    auto q = 12000L; // Due to adding L it is assigned as Long rather that Int.
+//    auto w = 1212.1212f; // Due to adding f it is assigned as float rather than double.
+//    int number {};  // This is understood as 0
+//    int number2;     // This is understood as garbage value
+//    cout << number2 << endl << number <<endl;
+//    cout << pi <<endl<< x << endl << y << endl << u<< endl << c << endl << i<< endl << q << endl << w << endl;
+////    cout << endl << "Enter A, B: ";
+////    cin >> a >> b;
+////    cout << a + b;
+//
+//    ///////////////////////////////////////////
+//    int kk = 0b01111111111111111111111111111111;
+//    cout <<endl<<"4 Byte signed int: "<< kk<<endl;
+//    //////////////////////////////////////////
+//    long timeElepsed = time(0);
+//    srand(timeElepsed);
+//    int num = rand() % 10;
+//    cout << endl<<num;
+////////// Pointer to 2D Array
+//	int x [2][2] = {{1,2},{3,4}};
+//	int *ptr = &x[0][0];
+//	cout << *(*(ptr+1)+1);
+//////////Pointer to Pointer
+//	char a = 'g';
+//	char *b;
+//	char **c;
+//	b = &a;
+//	c = &b;
+//	cout << c;
+/////////Pointer to NULL
+//	int *ptr = NULL;
+//	//or
+//	int *ptr2= 0;
+//    return 0;
+////////////Dynamic Memory Allocation/////////////
+	int *ptr = new int[10];
+	cout << "Enter Int: ";
+	for (int i = 0 ; i< 10 ; i++){
+		cin >> ptr[i];
+	}
+	for (int i = 0 ; i< 10 ; i++){
+		cout << endl << "new: "<<ptr[i];
+	}
+}

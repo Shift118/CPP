@@ -1,0 +1,11 @@
+23:22:13 **** Rebuild of configuration Debug for project Print Minimum Score ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Print Minimum Score.o" "..\\src\\Print Minimum Score.cpp" 
+..\src\Print Minimum Score.cpp: In function 'int main()':
+..\src\Print Minimum Score.cpp:12:12: warning: unused variable 'student' [-Wunused-variable]
+  Student * student = new Student [50];
+            ^~~~~~~
+g++ -o "Print Minimum Score.exe" "src\\Print Minimum Score.o" 
+
+23:22:14 Build Finished. 0 errors, 1 warnings. (took 1s.145ms)
+

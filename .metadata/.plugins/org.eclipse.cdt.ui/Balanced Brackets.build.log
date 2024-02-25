@@ -1,0 +1,11 @@
+17:13:24 **** Incremental Build of configuration Debug for project Balanced Brackets ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Balanced Brackets.o" "..\\src\\Balanced Brackets.cpp" 
+..\src\Balanced Brackets.cpp: In function 'bool isBalanced(std::__cxx11::string, stack*&)':
+..\src\Balanced Brackets.cpp:46:21: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for (int i = 0 ; i < expr.length() ; i++){
+                   ~~^~~~~~~~~~~~~~~
+g++ -o "Balanced Brackets.exe" "src\\Balanced Brackets.o" 
+
+17:13:25 Build Finished. 0 errors, 1 warnings. (took 1s.134ms)
+

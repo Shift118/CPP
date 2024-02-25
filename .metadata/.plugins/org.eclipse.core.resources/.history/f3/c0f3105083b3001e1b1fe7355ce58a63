@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+struct stack{
+	int data;
+	stack * next;
+};
+
+bool isEmpty(stack * top){
+	if(!top) return
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

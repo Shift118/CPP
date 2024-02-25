@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main(void) {
+	//////////Dynamic Memory Allocation/////////////
+		int *ptr1 = new int[10]; // Rent Size "10" in memory
+		int *ptr2 = new int(50); // Store value 50 in the int.
+//		cout << "Enter Int: ";
+//		for (int i = 0 ; i< 10 ; i++){
+//			cin >> ptr1[i];
+//		}
+//		cout << endl<< "new:";
+//		for (int i = 0 ; i< 10 ; i++){
+//			cout << " "<<ptr1[i];
+//		}
+		cout << "ptr2 = " << *ptr2<<endl;
+		delete[]ptr1; //  Delete the Rented Memory
+		ptr1 = NULL; //  Made the pointer point to nothing.
+//	 	delete p x new p// new makes a variable but delete deletes them.
+
+///////////////////////////////////////////////////////////////////
+		/////////////Pointer to Pointer/////////////
+		char a = 'g';
+		char *b;
+		char **c;
+		b = &a;
+		c = &b;
+		cout << "**c = *b  = a = '" <<**c<<"'";
+///////////////////////////////////////////////////////////////////
+		/////////// Pointer to 2D Array/////////////
+		int x [2][2] = {{1,2},{3,4}};
+		int (*ptr)[2];
+		ptr = x;
+		cout << "x[][] = "<<*(*(ptr+1)+1);
+}

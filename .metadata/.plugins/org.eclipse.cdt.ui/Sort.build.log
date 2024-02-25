@@ -1,0 +1,6 @@
+12:19:37 **** Incremental Build of configuration Debug for project Sort ****
+Info: Internal Builder is used for build
+g++ -o Sort.exe "src\\Sort.o" 
+
+12:19:37 Build Finished. 0 errors, 0 warnings. (took 235ms)
+

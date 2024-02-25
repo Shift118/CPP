@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+struct Node{
+	int val;
+	Node * left, *right;
+};
+
+void insert(Node *& root, int val){
+	if(!root){
+		Node * newRoot = Node();
+		newRoot -> val = val;
+		newRoot -> left = newRoot -> right = NULL;
+		root = newRoot;
+	}else if(val < root -> val){
+		insert(root -> left,val);
+	}else if(val > root -> val){
+		insert(root -> right,val);
+	}
+}
+
+void preTraversal(Node * root){ // Root -> Left -> Right
+	if(!root) return;
+	cout << " " <<root -> val;
+	preTraversal(root -> left);
+	preTraversal(root -> right);
+}
+
+
+
+
+
+int main() {
+
+	return 0;
+}

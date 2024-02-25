@@ -1,0 +1,7 @@
+17:15:43 **** Incremental Build of configuration Debug for project BST_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BST_1.o" "..\\src\\BST_1.cpp" 
+g++ -o BST_1.exe "src\\BST_1.o" 
+
+17:15:44 Build Finished. 0 errors, 0 warnings. (took 1s.188ms)
+

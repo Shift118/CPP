@@ -1,0 +1,7 @@
+23:21:58 **** Rebuild of configuration Debug for project DS Sheet2 Assignment ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sheet2Assignment.o" "..\\src\\Sheet2Assignment.cpp" 
+g++ -o "DS Sheet2 Assignment.exe" "src\\Sheet2Assignment.o" 
+
+23:21:59 Build Finished. 0 errors, 0 warnings. (took 1s.383ms)
+

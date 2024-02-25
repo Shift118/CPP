@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;StaticStack/src/DynamicStack_LinkedList.cpp&apos; to &apos;StaticStack.cpp&apos;" description="Rename resource &apos;DynamicStack_LinkedList.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/DynamicStack_LinkedList.cpp" name="StaticStack.cpp" stamp="1702215588993" updateReferences="true"/>
+</session>

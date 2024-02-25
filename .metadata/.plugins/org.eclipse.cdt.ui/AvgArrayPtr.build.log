@@ -1,0 +1,7 @@
+23:21:56 **** Rebuild of configuration Debug for project AvgArrayPtr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AvgArrayPtr.o" "..\\src\\AvgArrayPtr.cpp" 
+g++ -o AvgArrayPtr.exe "src\\AvgArrayPtr.o" 
+
+23:21:57 Build Finished. 0 errors, 0 warnings. (took 1s.95ms)
+

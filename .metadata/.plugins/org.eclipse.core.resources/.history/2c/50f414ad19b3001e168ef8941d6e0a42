@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+struct Node{
+	int val;
+	Node * left, *right;
+};
+
+void insert(Node *& root, int val){
+	if(!root){
+		Node * newRoot = Node();
+		newRoot -> val = val;
+		newRoot -> left = newRoot -> right = NULL;
+		root = newRoot;
+	}else if(val < root -> val){
+		insert(root -> left,val);
+	}else if(val > root -> val){
+		insert(root -> right,val);
+	}
+}
+
+void preOrderTraversal(Node * root){ // Root -> Left -> Right
+	if(!root) return;
+	cout <<root -> val << " ";
+	preOrderTraversal(root -> left);
+	preOrderTraversal(root -> right);
+}
+void inOrderTraversal(Node * root){ // Left-> Root -> Right
+	if(!root) return;
+	inOrderTraversal(root -> left);
+	cout <<root -> val << " ";
+	inOrderTraversal(root -> right);
+}
+void postOrderTraversal(Node * root){ // Left -> Right -> Root
+	if(!root) return;
+	postOrderTraversal(root -> left);
+	postOrderTraversal(root -> right);
+	cout <<root -> val << " ";
+}
+
+
+
+
+int main() {
+
+	return 0;
+}

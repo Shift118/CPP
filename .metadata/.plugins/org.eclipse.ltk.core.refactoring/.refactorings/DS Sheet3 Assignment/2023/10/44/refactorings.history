@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DS Sheet3 Assignment/Debug/src/DS Sheet3 Assignment.o&apos; to &apos;DS Sheet3 Assignment.cpp&apos;" description="Rename resource &apos;DS Sheet3 Assignment.o&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/src/DS Sheet3 Assignment.o" name="DS Sheet3 Assignment.cpp" stamp="1698685902862" updateReferences="true"/>
+</session>

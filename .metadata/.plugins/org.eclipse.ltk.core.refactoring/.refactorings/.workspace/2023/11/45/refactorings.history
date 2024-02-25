@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Dynamic Array  Reverse&apos; to &apos;Dynamic Array Reverse&apos;" description="Rename resource &apos;Dynamic Array  Reverse&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Dynamic Array  Reverse" name="Dynamic Array Reverse" stamp="1699270676937" updateReferences="true"/>
+</session>

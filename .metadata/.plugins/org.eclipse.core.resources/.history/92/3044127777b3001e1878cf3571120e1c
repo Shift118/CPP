@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+	int val;
+	int priority;
+	Node* next;
+};
+
+void enqueue(Node* head,int priority,int val){
+	Node * new
+}
+
+
+int main() {
+
+	return 0;
+}

@@ -1,0 +1,6 @@
+16:36:34 **** Incremental Build of configuration Debug for project Student Dyanmic Stack ****
+Info: Internal Builder is used for build
+g++ -o "Student Dyanmic Stack.exe" "src\\Student Dyanmic Stack.o" 
+
+16:36:34 Build Finished. 0 errors, 0 warnings. (took 299ms)
+

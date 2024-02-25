@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+	int val;
+	int priority;
+	Node* next;
+};
+
+void enqueue(Node *& head,int priority,int val){
+	Node * newHead = new Node;
+	newHead -> val = val;
+	newHead -> priority = priority;
+	newHead -> next = NULL;
+	if(!head){
+		head = newHead;
+	}else if(head -> priority < priority){
+
+	}
+}
+
+
+int main() {
+
+	return 0;
+}

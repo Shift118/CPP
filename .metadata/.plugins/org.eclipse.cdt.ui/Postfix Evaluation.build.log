@@ -1,0 +1,7 @@
+21:46:09 **** Incremental Build of configuration Debug for project Postfix Evaluation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Postfix Evaluation.o" "..\\src\\Postfix Evaluation.cpp" 
+g++ -o "Postfix Evaluation.exe" "src\\Postfix Evaluation.o" 
+
+21:46:10 Build Finished. 0 errors, 0 warnings. (took 1s.200ms)
+
